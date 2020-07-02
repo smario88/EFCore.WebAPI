@@ -18,9 +18,7 @@ namespace EFCore.Repo
         public DbSet<Arma> Armas { get; set; }
         public DbSet<HeroiBatalha> HeroiBatalhas { get; set; }
         public DbSet<IdentidadeSecreta> identidadeSecretas { get; set; }
-
-
-       
+                     
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<HeroiBatalha>(entity =>
